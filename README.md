@@ -52,6 +52,23 @@ Este sistema é voltado para controlar motores em tempo real, fazendo uso de té
 ### Passos para Execução
 
 1. **Clonar o Repositório:**
-   ```bash
+
+```bash
    git clone https://github.com/thallys-smo/Embarcados.git
    cd Embarcados
+```
+
+2. **Docker - Automatizações:**
+
+Dentro da pasta **Dockerfile/scripts, temos dois scripts de automatização: 
+
+* **Script de Build:** Automatização da construção das Imagem Docker para uma ambiente de desenvolvimento de projeto. 
+
+```bash
+   scripts/build.sh
+```
+* **Script de Run:** Automação do acesso do container com configurações pré-configuradas. 
+
+```bash
+   scripts/run.sh
+```
