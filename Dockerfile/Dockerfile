@@ -23,6 +23,8 @@ RUN dpkg --add-architecture armhf \
 FROM builder AS builder-lely-core
 RUN mkdir /lely-core && touch /lely-core/xablau
 COPY lely-core/ /lely-core
+WORKDIR /lely-core
+RUN autoreconf -i
 RUN mkdir /lely-core/build-arm-docker-debian-11
 RUN mkdir /lely-core/install-arm-docker-debian-11
 WORKDIR /lely-core/build-arm-docker-debian-11
