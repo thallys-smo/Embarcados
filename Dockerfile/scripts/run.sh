@@ -34,4 +34,5 @@ docker run -it --rm \
     --network=host \
     --ipc=host \
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+    -v "$PWD/Codigos:/home/builder/Codigos" \
     embedded:control_system

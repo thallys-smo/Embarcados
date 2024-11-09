@@ -1,0 +1,1 @@
+# Binário para Arquitetura ARM - BeagleBone
