@@ -9,6 +9,6 @@ Membros do grupo:
 
 Objetivo do projeto:
 
-  Nosso projeto tem como objetivo realisarr uma análise detalhada do código disponibilizados para a disciplina e de seu funcionamento. Com base nessa análise será feita uma simplificação da estrutura dos arquivo junto da elaboração de uma documentação explicativa de como utiliza-los, desde de o build do docker até o deploy do executável final
+  Nosso projeto tem como objetivo realisar uma análise detalhada do código disponibilizados para a disciplina e de seu funcionamento. Com base nessa análise será feita uma simplificação da estrutura dos arquivo junto da elaboração de uma documentação explicativa de como utiliza-los, desde de o build do docker até o deploy do executável final
 
 Link do vídeo:
