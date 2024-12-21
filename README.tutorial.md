@@ -105,7 +105,7 @@ Agora que a BeagleBone está configurada e conectada à rede:
    git clone <URL-do-repositorio>
    cd <nome-do-projeto>
    ```
-2. Compile o projeto (se necessário):
+2. Compile o projeto:
    ```bash
    mkdir build
    cd build

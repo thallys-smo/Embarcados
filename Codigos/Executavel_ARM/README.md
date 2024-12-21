@@ -24,3 +24,34 @@ Para executar o programa na BeagleBone, é necessário transferir o executável 
 
 2. **Configurando o Caminho das Bibliotecas**
 
+Após transferir o executável e as bibliotecas para a BeagleBone, você precisará garantir que as bibliotecas compartilhadas estejam acessíveis no ambiente de execução. Para isso, siga os seguintes passos:
+
+1. **Crie um diretório para armazenar as bibliotecas** (caso não tenha feito isso durante a transferência):
+
+  ```bash
+    mkdir -p /home/debian/libs
+  ```
+
+2. **Transfira as bibliotecas para o diretório libs**:
+
+Se ainda não transferiu as bibliotecas, copie os arquivos .so e suas variantes para o diretório criado. Execute o comando abaixo para transferir os arquivos da sua máquina local para o diretório libs na BeagleBone:
+
+  ```bash
+    scp liblely-* debian@<IP_da_BeagleBone>:/home/debian/libs
+  ```
+
+3. **Atualize o caminho das bibliotecas**:
+
+Para que o sistema reconheça as bibliotecas compartilhadas, adicione o caminho do diretório libs ao arquivo de configuração ld.so.conf:
+
+  ```bash
+    echo "/home/debian/libs" | sudo tee -a /etc/ld.so.conf.d/custom-libs.conf
+  ```
+
+4. **Recarregue a configuração das bibliotecas**:
+
+Após adicionar o caminho ao arquivo de configuração, recarregue a configuração das bibliotecas com o comando:
+
+  ```bash
+    sudo ldconfig
+  ```
